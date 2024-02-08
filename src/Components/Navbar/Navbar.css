@@ -61,8 +61,8 @@
     cursor: pointer;
 }
 
-.nav-login-cart button{
-    background: #f3f3f3;
+.nav-login-cart button:active{
+    background: #e7dbdb;
 }
 
 .nav-cart-count{
