@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
 import all_product from '../Components/Assets/all_product'
+import { useState } from "react";
 
 export const ShopContext = createContext(null);
 
@@ -17,6 +18,7 @@ const ShopContextProvider = (props) => {
 
     const addToCart = (itemId) =>{
         setCartItems((prev)=> ({...prev,[itemId]: prev[itemId]+1}))
+        console.log(cartItems);
     }
 
     const removeFromCart = (itemId) =>{
